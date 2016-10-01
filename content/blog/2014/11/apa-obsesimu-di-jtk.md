@@ -1,7 +1,10 @@
 ---
 title: '"Apa Obsesimu di JTK?"'
 date: 2014-11-02T16:57:32+07:00
+lastmod: 2016-10-02T00:00:00+07:00
 ---
+_Update terakhir pada 2 Oktober 2016, dengan mengupayakan tidak ada perubahan sudut pandang waktu tulisan ini._
+
 Setidaknya sudah tiga kali selama berada di [Jurusan Teknik Komputer dan Informatika (JTK) Politeknik Negeri Bandung][1] saya diminta untuk menuliskan mengenai hal yang satu ini: obsesi. Pertama, ketika saya mewawancarai kak [Mita Kania Dewi][2]; kedua, ketika mewawancarai kang [Rahmat Zulfikri][3]; ketiga, ketika diminta oleh kak [Trisna Ari Roshinta][4].
 
 Apa pula makhluk bernama obsesi ini? KBBI edisi keempat [mendefinisikan kata obsesi][5] sebagai berikut (setelah di edisi sebelumnya, [sebagaimana diungkap oleh dosen saya][6], KBBI sempat memaknai kata ini hanya dari sudut pandang psikologi dan berkonotasi negatif):
@@ -50,6 +53,8 @@ Orang-orang seperti itu membuat saya semakin mantap di informatika, karena di in
 
 Orang-orang yang membuat saya merasa "terlambat masuk ke informatika". Orang-orang yang membuat saya menaruh obsesi untuk melangkahkan kaki di bandara negara lain, membawa nama Indonesia, nama Politeknik Negeri Bandung, dan nama Jurusan Teknik Komputer dan Informatika ke ACM-ICPC World Finals; atau setidaknya melangkahkan kaki di Jakarta, di ACM-ICPC Asia Jakarta Regional Contest. Melangkahkan kaki membawa nama JTK di berbagai kompetisi pemrograman lainnya.
 
+_Update_: Hingga Oktober 2016, saya belum berhasil mewujudkan mimpi yang satu ini. Alhamdulillah, saya dan [Imam Fauzan][21] bisa membawa nama JTK menjadi juara di Agricode IPB PC 2015, tetapi perjalanan saya ke World Finals sepertinya masih jauh; terakhir kali saya bersama tim "Rumah Besar Cipali" masih terdampar (dan gugur) sebatas ACM-ICPC Multi-Provincial Sumatera 2016.
+
 ## Pengabdian masyarakat dengan informatika
 
 Saya tertarik untuk menyelesaikan _real-world problems_ sejak bertemu Pak Dengklek dan bebek-bebeknya di OSN Informatika 2013. Beberapa aplikasi yang pernah saya buat (_realtime mirror viewer_ PPDB Kota Bandung untuk SMAN 2 Bandung, sistem pendataan peserta didik yang terkoneksi dengan Paket Aplikasi Sekolah Kementerian Pendidikan dan Kebudayaan, serta sistem simulasi SNMPTN 2014) juga berupaya menyelesaikan _real-world small problems_.
@@ -65,6 +70,20 @@ Alhamdulillah, Allah memberikan saya beberapa jalan untuk itu: saya masih menjab
 ## Proposal Program Kreativitas Mahasiswa saya (mudah-mudahan) tembus!
 
 Yang ini mungkin salah satu perincian dari keinginan saya untuk melakukan pengabdian masyarakat di bidang informatika. Tahun ini saya bersama kedua anggota tim saya yang baik hati, [Anggi Nur Dhamayanty][18] dan [Rachma Hadiyanti][19] mengajukan proposal [Program Kreativitas Mahasiswa][20] untuk menyelesaikan persoalan penilaian Kurikulum 2013 di tingkat SMA.
+
+_Update_: Ternyata proposal itu belum ditakdirkan tembus. Tetapi _alhamdulillah_ Allah menggantinya dengan mengizinkan saya ikut berbagai penelitian dosen bahkan sejak saya masih berkuliah di tengah semester 1 hingga saat ini (Oktober 2016), termasuk mengizinkan keinginan saya untuk melakukan eksperimen konfigurasi _web server_ diwujudkan dan difasilitasi berupa penelitian dosen.
+
+## Menjadi anggota Departemen Pendidikan di himpunan
+
+_Bagian ini baru saya tuliskan Oktober 2016 setelah melihat log email saya dengan kak Dera Firdhausya. Saya kemudian ingat bahwa sengaja tidak menulis bagian ini saat November 2014 karena takut "kok masih baru, belum dikenalkan departemen, tapi sudah berani bilang ingin jadi anggota departemen ..." --- ya, sindrom menjadi mahasiswa baru._
+
+Masih ada keterkaitan erat dengan bu Ani. Kebetulan, beliau bekerjasama secara formal dengan Departemen Pendidikan untuk berkolaborasi menjalankan penelitian beliau (hingga saat ini --- Oktober 2016, ketika nama departemennya bahkan sudah berubah menjadi Departemen Pendidikan dan Teknologi Informasi, Dikti).
+
+Tidak seperti umumnya mahasiswa baru angkatan 2014, pertemuan pertama saya dengan Departemen Pendidikan sudah dimulai jauh sebelum himpunan mengenalkan Departemen Pendidikan di kisaran bulan November 2014. Saya bertemu mereka ketika bu Ani mengajak saya bersama Bayu Arafli dan Eva Danti Rahmanita (kedua teman satu pleton saya saat kegiatan bela negara; Eva kebetulan juga satu SMP dengan saya) untuk melakukan pengabdian kepada masyarakat ke sebuah desa di Padalarang dengan mengajarkan guru-guru SMK di sana teknologi Moodle _auto-grading_ untuk pembelajaran, dan bu Ani juga mengajak Tim 10 --- sebutan bu Ani dan pak Joe untuk 10 orang angkatan 2013 di departemen itu.
+
+Pertemuan saya dengan Tim 10 begitu mengesankan; mereka juga _welcome_ menerima kami yang _notabene_ bahkan belum memulai perkuliahan di JTK, tapi tiba-tiba sudah diajak ikut PKM. Sehingga, ketika mewawancarai [kang Pahlevi Ridwan][22] (salah satu dari Tim 10 dan kemudian menjadi ketua departemen di tahun selanjutnya) dan ditanya, "apa keinginanmu di JTK?" saya dengan mantap menjawab, "saya ingin jadi anggota Departemen Pendidikan!"
+
+(Entah bisa dibilang _update_ atau tidak, tapi kemudian _alhamdulillah_ saya diterima menjadi anggota departemen itu di kepengurusan tahun 2015, Kabinet Melodi Pergerakan. Di tahun 2016, pada Kabinet Kolaborasi Perubahan, saya tidak menyangka bahwa kemudian saya diamanahi untuk menjadi ketua departemen.)
 
 ## "Jika jiwa dan raga ini dicukupkan ... mengabdi kepada Tuhan, bangsa, dan almamater."
 
@@ -98,3 +117,5 @@ Mudah-mudahan, Allah memudahkan saya menjalani semuanya, sehingga hidup saya "ti
 [18]: https://www.facebook.com/anggienur?fref=ts
 [19]: https://www.facebook.com/imahadiyanti?fref=ts
 [20]: http://id.wikipedia.org/wiki/Program_Kreativitas_Mahasiswa
+[21]: http://imamfzn.wordpress.com/
+[22]: http://eripahle.wordpress.com/
