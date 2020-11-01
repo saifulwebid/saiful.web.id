@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+valid=1
+
+grep -RE '^date:' content | while read line; do
+    year_valid=1
+    month_valid=1
+
+    first=$(grep -oE '[0-9]{4}/[0-9]{2}' <<< "$line")
+    second=$(grep -oE '[0-9]{4}-[0-9]{2}' <<< "$line")
+
+    first_year=$(cut -d/ -f1 <<< "$first")
+    first_month=$(cut -d/ -f2 <<< "$first")
+    second_year=$(cut -d- -f1 <<< "$second")
+    second_month=$(cut -d- -f2 <<< "$second")
+
+    if [ "$first_year" != "$second_year" ]; then
+        year_valid=0
+    fi
+
+    if [ "$first_month" != "$second_month" ]; then
+        month_valid=0
+    fi
+
+    if [ "$(( year_valid + month_valid ))" -ne "2" ]; then
+        filename=$(cut -d: -f1 <<< "$line")
+        echo "date vs content path mismatch: $filename"
+        valid=0
+    fi
+done
+
+if [ "$valid" -ne "1" ]; then
+    exit 1
+fi
