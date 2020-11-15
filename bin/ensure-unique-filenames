@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-find content -type f -exec basename {} \; | sort | uniq -d | grep -v _index.md | while read line; do
+find content -type f ! -name _index.md -exec basename {} \; | sort | uniq -d | while read line; do
     echo "Duplicates found; exiting ..."
     exit 1
 done
