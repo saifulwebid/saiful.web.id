@@ -1,8 +1,15 @@
 #!/usr/bin/env bash
 
-valid=1
+set -euo pipefail
 
-grep -RE '^date:' content | while read line; do
+RED=`tput setaf 1`
+GREEN=`tput setaf 2`
+BOLD=`tput bold`
+RESET=`tput sgr0`
+
+all_valid=0
+
+while read line; do
     year_valid=1
     month_valid=1
 
@@ -23,12 +30,20 @@ grep -RE '^date:' content | while read line; do
     fi
 
     if [ "$(( year_valid + month_valid ))" -ne "2" ]; then
-        filename=$(cut -d: -f1 <<< "$line")
-        echo "date vs content path mismatch: $filename"
-        valid=0
-    fi
-done
+        if [[ "$all_valid" -eq "0" ]]; then
+            echo "${RED}${BOLD}Date vs content path mismatches found:${RESET}"
+            all_valid=1
+        fi
 
-if [ "$valid" -ne "1" ]; then
-    exit 1
+        filename=$(cut -d: -f1 <<< "$line")
+        date_in_file=$(cut -d" " -f2 <<< "$line")
+
+        echo "- $filename (in file: $date_in_file)"
+    fi
+done < <(grep -RE '^date:' content)
+
+if [[ "$all_valid" -eq "0" ]]; then
+    echo "${GREEN}${BOLD}No date vs content path mismatches found.${RESET}"
 fi
+
+exit "$all_valid"
