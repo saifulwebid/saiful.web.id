@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+GREEN=`tput setaf 2`
+BOLD=`tput bold`
+RESET=`tput sgr0`
+
+echo "${GREEN}${BOLD}Notifying Google...${RESET}"
+curl -i "https://www.google.com/webmasters/sitemaps/ping?sitemap=https://saiful.web.id/sitemap.xml"
+echo ""
+
+echo "${GREEN}${BOLD}Notifying Bing...${RESET}"
+curl -i "https://www.bing.com/webmaster/ping.aspx?siteMap=https://saiful.web.id/sitemap.xml"
+echo ""
