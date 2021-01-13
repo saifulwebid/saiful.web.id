@@ -40,7 +40,7 @@ while read line; do
 
         echo "- $filename (in file: $date_in_file)"
     fi
-done < <(grep -RE '^date:' content)
+done < <(grep -RE '^date:' content/blog/)
 
 if [[ "$all_valid" -eq "0" ]]; then
     echo "${GREEN}${BOLD}No date vs content path mismatches found.${RESET}"
