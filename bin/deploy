@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+if [ -z "$ENV" ]; then
+    export ENV=development
+fi
+
+if [ "$ENV" == "development" ]; then
+    if [ -z "$EXPIRES" ]; then
+        export EXPIRES=1h
+    fi
+fi
+
+echo "Deploying to $ENV environment."
+
+case $ENV in
+    production)
+        firebase --non-interactive deploy --only hosting
+        ;;
+    *)
+        firebase --non-interactive hosting:channel:deploy "$ENV" --expires 1h
+        ;;
+esac

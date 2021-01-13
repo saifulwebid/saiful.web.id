@@ -1,0 +1,335 @@
+{
+    "emulators": {
+        "hosting": {
+            "port": 1313
+        }
+    },
+    "hosting": {
+        "public": "public",
+        "ignore": [
+            "firebase.json",
+            "**/.*",
+            "**/node_modules/**"
+        ],
+        "cleanUrls": true,
+        "trailingSlash": true,
+        "rewrites": [
+            {
+                "source": "/feed",
+                "destination": "/index.xml"
+            }
+        ],
+        "redirects": [
+            {
+                "source": "/profil-singkat",
+                "destination": "/profil/",
+                "type": 301
+            },
+            {
+                "source": "/2020/03/ujung-panjang-dari-rumah",
+                "destination": "/2020/03/29/ujung-panjang-dari-rumah/",
+                "type": 301
+            },
+            {
+                "source": "/2020/03/jadi-aktivis-dari-rumah",
+                "destination": "/2020/03/25/jadi-aktivis-dari-rumah/",
+                "type": 301
+            },
+            {
+                "source": "/2019/06/tes-sim-c-itu-mungkin-keliru",
+                "destination": "/2019/06/11/tes-sim-c-itu-mungkin-keliru/",
+                "type": 301
+            },
+            {
+                "source": "/2019/06/menulis-di-wordpress-com",
+                "destination": "/2019/06/07/menulis-di-wordpress-com/",
+                "type": 301
+            },
+            {
+                "source": "/2016/03/membuat-garis-lurus-di-powerdesigner",
+                "destination": "/2016/03/27/membuat-garis-lurus-di-powerdesigner/",
+                "type": 301
+            },
+            {
+                "source": "/2015/11/atmosfer-maju-bersama",
+                "destination": "/2015/11/23/atmosfer-maju-bersama/",
+                "type": 301
+            },
+            {
+                "source": "/2015/09/with-great-power-comes-great-responsibility",
+                "destination": "/2015/09/03/with-great-power-comes-great-responsibility/",
+                "type": 301
+            },
+            {
+                "source": "/2015/09/google-punya-logo-baru",
+                "destination": "/2015/09/02/google-punya-logo-baru/",
+                "type": 301
+            },
+            {
+                "source": "/2015/07/programming",
+                "destination": "/2015/07/04/programming/",
+                "type": 301
+            },
+            {
+                "source": "/2015/05/lifecycle-sebuah-windows-app",
+                "destination": "/2015/05/31/lifecycle-sebuah-windows-app/",
+                "type": 301
+            },
+            {
+                "source": "/2015/05/windows-app-cert-kit-periksa-app-sebelum-upload-ke-store",
+                "destination": "/2015/05/31/windows-app-cert-kit-periksa-app-sebelum-upload-ke-store/",
+                "type": 301
+            },
+            {
+                "source": "/2015/05/implementasi-asynchronous-pada-feed-reader-c",
+                "destination": "/2015/05/29/implementasi-asynchronous-pada-feed-reader-c/",
+                "type": 301
+            },
+            {
+                "source": "/2015/05/asynchronous-await-async-c",
+                "destination": "/2015/05/28/asynchronous-await-async-c/",
+                "type": 301
+            },
+            {
+                "source": "/2015/05/universal-apps-write-once-almost-run-everywhere",
+                "destination": "/2015/05/10/universal-apps-write-once-almost-run-everywhere/",
+                "type": 301
+            },
+            {
+                "source": "/2014/11/apa-obsesimu-di-jtk",
+                "destination": "/2014/11/02/apa-obsesimu-di-jtk/",
+                "type": 301
+            },
+            {
+                "source": "/2014/11/repositori-lokal-linux-mint-17-qiana",
+                "destination": "/2014/11/01/repositori-lokal-linux-mint-17-qiana/",
+                "type": 301
+            },
+            {
+                "source": "/2014/11/touchpad-indicator-untuk-ubuntu-dan-linux-mint",
+                "destination": "/2014/11/01/touchpad-indicator-untuk-ubuntu-dan-linux-mint/",
+                "type": 301
+            },
+            {
+                "source": "/2014/11/ngoprek-linux-mint-17",
+                "destination": "/2014/11/01/ngoprek-linux-mint-17/",
+                "type": 301
+            },
+            {
+                "source": "/2014/10/html-sederhana-anggota-ict-club",
+                "destination": "/2014/10/21/html-sederhana-anggota-ict-club/",
+                "type": 301
+            },
+            {
+                "source": "/2014/10/google-indonesia-hacked",
+                "destination": "/2014/10/05/google-indonesia-hacked/",
+                "type": 301
+            },
+            {
+                "source": "/2014/06/sahabat-pena",
+                "destination": "/2014/06/09/sahabat-pena/",
+                "type": 301
+            },
+            {
+                "source": "/2013/11/fic-ggnmiv",
+                "destination": "/2013/11/25/fic-ggnmiv/",
+                "type": 301
+            },
+            {
+                "source": "/2013/11/definition-of-friend",
+                "destination": "/2013/11/17/definition-of-friend/",
+                "type": 301
+            },
+            {
+                "source": "/2013/11/teach-something-you-know-best",
+                "destination": "/2013/11/17/teach-something-you-know-best/",
+                "type": 301
+            },
+            {
+                "source": "/2013/10/lcc-format-baru",
+                "destination": "/2013/10/13/lcc-format-baru/",
+                "type": 301
+            },
+            {
+                "source": "/2013/10/halo-dunia",
+                "destination": "/2013/10/12/halo-dunia/",
+                "type": 301
+            },
+            {
+                "source": "/2011/06/pertama-kali-bermain-kasti",
+                "destination": "/2011/06/16/pertama-kali-bermain-kasti/",
+                "type": 301
+            },
+            {
+                "source": "/2011/06/kesibukan-diri-sendiri-dan-orang-lain",
+                "destination": "/2011/06/16/kesibukan-diri-sendiri-dan-orang-lain/",
+                "type": 301
+            },
+            {
+                "source": "/2010/11/membuat-form-dinamis",
+                "destination": "/2010/11/21/membuat-form-dinamis/",
+                "type": 301
+            },
+            {
+                "source": "/2010/09/3-tahun-jalurpantura-saifulwebid",
+                "destination": "/2010/09/09/3-tahun-jalurpantura-saifulwebid/",
+                "type": 301
+            },
+            {
+                "source": "/2010/09/arti-minal-aidin-wal-faizin-bukanlah-mohon-maaf-lahir-dan-batin",
+                "destination": "/2010/09/09/arti-minal-aidin-wal-faizin-bukanlah-mohon-maaf-lahir-dan-batin/",
+                "type": 301
+            },
+            {
+                "source": "/2010/09/halo-dunia-mswi",
+                "destination": "/2010/09/05/halo-dunia-mswi/",
+                "type": 301
+            },
+            {
+                "source": "/2010/07/internet-cepat-kapan",
+                "destination": "/2010/07/14/internet-cepat-kapan/",
+                "type": 301
+            },
+            {
+                "source": "/2010/07/hello-world",
+                "destination": "/2010/07/14/hello-world/",
+                "type": 301
+            },
+            {
+                "source": "/2010/06/i-will-switch-to-movabletype-soon",
+                "destination": "/2010/06/15/i-will-switch-to-movabletype-soon/",
+                "type": 301
+            },
+            {
+                "source": "/2010/06/blogger-atau-wordpress",
+                "destination": "/2010/06/15/blogger-atau-wordpress/",
+                "type": 301
+            },
+            {
+                "source": "/2010/06/kenaikan-tarif-dasar-listrik",
+                "destination": "/2010/06/15/kenaikan-tarif-dasar-listrik/",
+                "type": 301
+            },
+            {
+                "source": "/2010/05/akhirnya-bisa-nulis-lagi",
+                "destination": "/2010/05/27/akhirnya-bisa-nulis-lagi/",
+                "type": 301
+            },
+            {
+                "source": "/2010/05/lomba-mading-online-vakum-sementara",
+                "destination": "/2010/05/17/lomba-mading-online-vakum-sementara/",
+                "type": 301
+            },
+            {
+                "source": "/2010/05/pameran-pedang-nabi",
+                "destination": "/2010/05/02/pameran-pedang-nabi/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/alangkah-lucunya-negeri-ini",
+                "destination": "/2010/04/30/alangkah-lucunya-negeri-ini/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/ubuntu-10-04-lucid-lynx-diluncurkan",
+                "destination": "/2010/04/30/ubuntu-10-04-lucid-lynx-diluncurkan/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/website-polres-dihack-polres-beri-tanggapan",
+                "destination": "/2010/04/28/website-polres-dihack-polres-beri-tanggapan/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/ingin-seperti-mereka",
+                "destination": "/2010/04/26/ingin-seperti-mereka/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/sony-ucapkan-sayonara-ke-disket",
+                "destination": "/2010/04/26/sony-ucapkan-sayonara-ke-disket/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/masalah-max-width-pada-gambar",
+                "destination": "/2010/04/26/masalah-max-width-pada-gambar/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/hitung-mundur-kematian-oauth",
+                "destination": "/2010/04/25/hitung-mundur-kematian-oauth/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/first-post",
+                "destination": "/2010/04/25/first-post/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/hot-thread-pertama",
+                "destination": "/2010/04/14/hot-thread-pertama/",
+                "type": 301
+            },
+            {
+                "source": "/2010/04/facebook-hoax-lagi",
+                "destination": "/2010/04/13/facebook-hoax-lagi/",
+                "type": 301
+            },
+            {
+                "source": "/2009/09/nostalgia-windows-98",
+                "destination": "/2009/09/09/nostalgia-windows-98/",
+                "type": 301
+            },
+            {
+                "source": "/2009/07/report-starity-vaganza",
+                "destination": "/2009/07/19/report-starity-vaganza/",
+                "type": 301
+            },
+            {
+                "source": "/2008/10/ruu-pornografi-disahkan",
+                "destination": "/2008/10/30/ruu-pornografi-disahkan/",
+                "type": 301
+            },
+            {
+                "source": "/2008/06/bersama-meraih-kebebasan-finansial-yang-sebenarnya",
+                "destination": "/2008/06/10/bersama-meraih-kebebasan-finansial-yang-sebenarnya/",
+                "type": 301
+            },
+            {
+                "source": "/2008/06/menghilangkan-navbar",
+                "destination": "/2008/06/03/menghilangkan-navbar/",
+                "type": 301
+            },
+            {
+                "source": "/2008/06/backup",
+                "destination": "/2008/06/01/backup/",
+                "type": 301
+            },
+            {
+                "source": "/2008/03/perkenalkan",
+                "destination": "/2008/03/13/perkenalkan/",
+                "type": 301
+            },
+            {
+                "source": "/osk-sman2bdg-2016",
+                "destination": "https://saifulwebid.github.io/osk-sman2bdg-2016/",
+                "type": 301
+            },
+            {
+                "regex": "/osk-sman2bdg-2016/(.*)",
+                "destination": "https://saifulwebid.github.io/osk-sman2bdg-2016/:1",
+                "type": 301
+            },
+            {
+                "source": "/osk-sman2bdg-2017",
+                "destination": "https://saifulwebid.github.io/osk-sman2bdg-2017/",
+                "type": 301
+            },
+            {
+                "regex": "/osk-sman2bdg-2017/(.*)",
+                "destination": "https://saifulwebid.github.io/osk-sman2bdg-2017/:1",
+                "type": 301
+            }
+        ]
+    }
+}

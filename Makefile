@@ -10,3 +10,11 @@ assets/chroma-monokai.css:
 .PHONY: serve
 serve: assets/chroma-monokai.css
 	@hugo serve --buildDrafts --buildFuture
+
+.PHONY: firebase-serve
+firebase-serve: assets/chroma-monokai.css
+	@bin/serve-with-firebase
+
+.PHONY: deploy
+deploy: all
+	@bin/deploy
