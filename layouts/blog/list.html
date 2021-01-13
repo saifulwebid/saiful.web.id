@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<ul class="archive-list">
+    {{ range .Pages.GroupByDate "2006" }}
+    <li>
+        <h2>{{ .Key }}</h2>
+        <ul>
+            {{ range .Pages }}
+            <li class="archive-item">
+                <p class="archive-date">{{ .Date.Format "January 2, 2006" }}</p>
+                <p class="archive-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+            </li>
+            {{ end }}
+        </ul>
+    </li>
+    {{ end }}
+</ul>
+
+{{ end }}

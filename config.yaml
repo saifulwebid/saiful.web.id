@@ -1,0 +1,19 @@
+baseURL: https://saiful.web.id/
+languageCode: id
+title: Muhammad Saiful Islam
+summaryLength: 500
+
+permalinks:
+  blog: /:year/:month/:day/:filename
+  page: /:filename
+
+pygmentsUseClasses: true
+
+taxonomies: {}
+
+rssLimit: 10
+
+disqusShortname: saifulwebid
+
+params:
+  disqusBaseURL: https://saiful.web.id/

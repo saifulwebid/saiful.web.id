@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+{{ range first 5 (where .Site.RegularPages "Type" "==" "blog") }}
+{{ partial "summary.html" . }}
+{{ end }}
+
+<p><a href="{{ "/blog/" | relURL }}">Lihat tulisan saya yang lain &rarr;</a></p>
+
+{{ end }}

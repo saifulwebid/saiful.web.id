@@ -1,0 +1,64 @@
+<head>
+	<meta charset="UTF-8">
+
+	<title>{{ if eq .Title "" }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}</title>
+
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="{{ (resources.Get "chroma-monokai.css" | fingerprint).RelPermalink }}" rel="stylesheet">
+	<link href="{{ (resources.Get "style.css" | fingerprint).RelPermalink }}" rel="stylesheet">
+
+	{{ if and .IsPage (ne .Section "page") }}
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "BlogPosting",
+		"headline": {{ .Title }},
+		{{- with $.Params.images }}
+		"image": {{ apply . "absURL" "." }},
+		{{- end }}
+		"datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
+		"dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
+		"author": {
+			"@type": "Person",
+			"name": "Muhammad Saiful Islam",
+			"url": "https://saiful.web.id"
+		}
+	}
+	</script>
+
+	{{ template "_internal/twitter_cards.html" . }}
+	<meta name="twitter:site" content="@saifulwebid">
+	<meta name="twitter:creator" content="@saifulwebid">
+
+	{{ template "_internal/opengraph.html" . }}
+	<meta property="article:author" content="https://www.facebook.com/saifulwebid">
+
+	{{ template "_internal/schema.html" . }}
+	{{ end }}
+
+	{{ if .Page.Params.useMathJax }}
+	<script>
+		MathJax = {
+			options: {
+				enableMenu: false
+			}
+		}
+	</script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+	{{ end }}
+
+	{{ if ne .Kind "404" }}
+	{{ if .Params.canonicalUrl }}
+	<link rel="canonical" href="{{ .Params.canonicalUrl }}">
+	{{ else }}
+	<link rel="canonical" href="{{ .Permalink }}">
+	{{ end }}
+	{{ end }}
+
+	<link rel="alternate" type="application/rss+xml" href="{{ "/feed/" | relURL }}" title="RSS feed Muhammad Saiful Islam" />
+	{{ range .AlternativeOutputFormats -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+	{{ end -}}
+</head>

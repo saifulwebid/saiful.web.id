@@ -1,0 +1,14 @@
+<header>
+{{ if and (eq .Section "blog") (eq .Kind "page") }}
+
+    <p class="meta">
+        Ditulis oleh <a href="{{ "/profil/" | relURL }}" rel="author">Muhammad Saiful Islam</a>. <a href="{{ "/" | relURL }}" class="nowrap">Lihat tulisan lainnya &rarr;</a>
+    </p>
+
+{{ else }}
+
+    {{ partial "menu.html" . }}
+    <h1><a href="{{ "/" | relURL }}">{{ .Site.Title }}</a></h1>
+
+{{ end }}
+</header>

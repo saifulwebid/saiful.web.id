@@ -1,0 +1,28 @@
+<article>
+    <h1>{{ .Title }}</h1>
+    {{ if ne .Type "page" }}
+    <p class="meta">
+        {{ .Date.Format "January 2, 2006" }}
+        {{ if ne .Lastmod .Date  }}
+            &bull; terakhir update {{ .Lastmod.Format "January 2, 2006" }}
+        {{ end }}
+    </p>
+    {{ end }}
+    {{ $body := .Content }}
+    {{ if .Truncated }}
+    {{ .Summary }}
+    {{ $body = replace .Content .Summary "" }}
+    <span id="more"></span>
+    {{ end }}
+    {{ $body | safeHTML }}
+    {{ with .Params.waybackFrom }}
+    <p class="meta-footer">Tulisan ini dikembalikan dari <a href="https://web.archive.org/">Wayback Machine</a> dari alamat berikut: {{ . }}.</p>
+    {{ end }}
+    {{ with .Params.canonicalUrl }}
+    <p class="meta-footer">Tulisan ini telah lebih dahulu terbit di <a href="{{ . }}">{{ . }}</a>.</p>
+    {{ end }}
+</article>
+
+{{ if eq .Type "blog" }}
+{{ partial "disqus.html" . }}
+{{ end }}

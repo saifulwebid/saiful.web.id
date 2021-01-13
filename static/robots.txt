@@ -1,0 +1,4 @@
+Sitemap: https://saiful.web.id/sitemap.xml
+
+User-agent: *
+Allow: /

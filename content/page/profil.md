@@ -1,6 +1,8 @@
 ---
 title: Profil
 lastMod: 2020-03-29T09:57:07+07:00
+menu:
+- main
 ---
 {{< figure src="https://www.gravatar.com/avatar/ef5f8254eb045eee7ed210e308f9fee5?s=150" class="align-right" >}}
 
