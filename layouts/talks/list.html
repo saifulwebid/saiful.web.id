@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+
+<ul class="talk-list">
+    {{ range .Pages.GroupByDate "2006" }}
+    <li>
+        <h2>{{ .Key }}</h2>
+        <ul>
+            {{ range .Pages }}
+            <li class="talk-item">
+                {{ with .Params.images }}
+                <figure>
+                    <img src="{{ index . 0 | absURL }}">
+                </figure>
+                {{ end }}
+                <div class="talk-details">
+                    <p class="talk-date">{{ .Date.Format "January 2, 2006" }}</p>
+                    <p class="talk-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>
+                    {{ if .Params.host }}
+                    <p>
+                        @
+                        {{ with .Params.hostUrl }}<a href="{{ . }}">{{ end }}
+                        {{ .Params.host }}
+                        {{ with .Params.hostUrl }}</a>{{ end }}
+                    </p>
+                    {{ end }}
+                    {{ with .Params.attachments }}
+                    <p>
+                        Attachments:
+                        {{ range . }}
+                        <a href="{{ .url }}">[ {{ .type }} ]</a>
+                        {{ end }}
+                    </p>
+                    {{ end }}
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+    </li>
+    {{ end }}
+</ul>
+
+{{ end }}

@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<article>
+    {{ with .Params.images }}
+    <figure>
+        <img src="{{ index . 0 | absURL }}">
+    </figure>
+    {{ end }}
+    <h1>{{ .Title }}</h1>
+    <p class="meta">
+        {{ .Date.Format "January 2, 2006" }}
+        {{ if .Params.host }}
+        @
+        {{ with .Params.hostUrl }}<a href="{{ . }}">{{ end }}
+        {{ .Params.host }}
+        {{ with .Params.hostUrl }}</a>{{ end }}
+        {{ end }}
+    </p>
+    {{ with .Params.attachments }}
+    <p class="meta">
+        Attachments:
+        {{ range . }}
+        <a href="{{ .url }}">[ {{ .type }} ]</a>
+        {{ end }}
+    </p>
+    {{ end }}
+    {{ .Content }}
+</article>
+
+{{ end }}
