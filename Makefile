@@ -1,8 +1,10 @@
+export ENV ?= development
+
 .PHONY: all
 all: assets/chroma-monokai.css
 	@bin/ensure-unique-filenames
 	@bin/validate-date
-	@hugo --cleanDestinationDir
+	@hugo --cleanDestinationDir --environment "$(ENV)"
 
 assets/chroma-monokai.css:
 	@hugo gen chromastyles --style=monokai > $@
